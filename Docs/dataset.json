@@ -1,0 +1,589 @@
+[
+  {
+    "id": "q_001",
+    "question": "Kanunun kabul tarihi nedir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nun kabul tarihi 13 Ocak 2011'dir.",
+    "relevant_doc_ids": [
+      "ttk_giris_chunk_1"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_002",
+    "question": "Kanun neyi konu almaktadır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu (TTK), Türk Medenî Kanununun ayrılmaz bir parçası olup ticari işletmeyi ilgilendiren işlem ve fiiller ile ticari hükümleri düzenler. Temel olarak altı kitaptan oluşur: Ticari İşletme, Ticaret Şirketleri, Kıymetli Evrak, Taşıma İşleri, Deniz Ticareti ve Sigorta Hukuku.",
+    "relevant_doc_ids": [
+      "ttk_madde_1",
+      "ttk_genel_kapsam"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_003",
+    "question": "Tüzel kişilerin işlerini görmeleri sırasında bir haksız rekabet fiili işlenirse hangi madde uygulanır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Tüzel kişilerin işlerini görmeleri sırasında bir haksız rekabet fiili işlenirse, tüzel kişi hakkında da 62 nci madde hükmü uygulanır.",
+    "relevant_doc_ids": [
+      "ttk_madde_63"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_004",
+    "question": "Ticari faaliyetinin başında ve her faaliyet döneminin sonunda, varlık ve borçlarının tutarlarının ilişkisini gösteren finansal tabloyu çıkarmak zorunda olan kişiler ne olarak adlandırılır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Tacir olarak adlandırılır (TTK Madde 68 gereğince bu yükümlülük tacirlere aittir).",
+    "relevant_doc_ids": [
+      "ttk_madde_68"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_005",
+    "question": "Genel kurul kararı aleyhine iptal veya butlan davası açıldığında ne olur?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Yönetim kurulu, iptal veya butlan davasının açıldığını ve duruşma gününü usulüne uygun olarak ilan eder ve şirketin internet sitesine koyar. İptal davasında üç aylık hak düşürücü sürenin sona ermesinden önce duruşmaya başlanamaz. Birden fazla iptal davası açıldığı takdirde davalar birleştirilerek görülür. Ayrıca mahkeme, şirketin istemi üzerine muhtemel zararlarına karşı davacıların teminat göstermesine karar verebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_448"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_006",
+    "question": "Tescil ve kayıt için gerçeğe aykırı beyanda bulunanlar kaç Türk Lirası ile cezalandırılır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Tescil ve kayıt için gerçeğe aykırı beyanda bulunanlar, ikibin (44.443) Türk Lirası idari para cezasıyla cezalandırılır.",
+    "relevant_doc_ids": [
+      "ttk_madde_38"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_007",
+    "question": "Anonim şirketlerde yönetim kurulu en az kaç kişiden oluşur?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 359 uyarınca anonim şirketin yönetim kurulu bir veya daha fazla kişiden oluşabilir. Yani en az 1 kişiden oluşur.",
+    "relevant_doc_ids": [
+      "ttk_madde_359"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_008",
+    "question": "Bir anonim şirket yönetim kurulu üyesinin şirkete borçlanma yasağının istisnaları hangi maddelerde geçmektedir ve şartları nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Yönetim kurulu üyelerinin borçlanma yasağı TTK Madde 395'te düzenlenmiştir. İstisna olarak, şirketler topluluğuna dâhil şirketlerin birbirlerine kefil olması ve garanti vermesi bu yasak kapsamında değildir. Ayrıca pay sahibi olan yönetim kurulu üyeleri için TTK Madde 358 devreye girer; bu maddeye göre iştirak taahhüdünden doğan borç hariç olmak üzere, şirketin serbest yedek akçelerle birlikte kârı geçmiş yıl zararlarını karşılayacak düzeyde değilse pay sahipleri de şirkete borçlanamaz.",
+    "relevant_doc_ids": [
+      "ttk_madde_395",
+      "ttk_madde_358"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_009",
+    "question": "2026 yılı itibarıyla ticaret sicil tasdiknamesi için ödenmesi gereken harç tutarı ne kadardır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "895,80 TL",
+    "relevant_doc_ids": [
+      "harclar.csv"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_010",
+    "question": "Şirket kurarken ödemem gereken harçlar nelerdir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik bağlam içermektedir. Kurulacak şirketin türü (Anonim, Limited, Şahıs vb.) ve sermaye miktarı belirtilmediği için ödenecek harçlar net olarak listelenememektedir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_011",
+    "question": "Türk Ticaret Kanunu'na göre metaverse üzerinden kurulan şirketlerin vergi muafiyeti oranı yüzde kaçtır?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nda 'metaverse' üzerinden kurulan şirketlere veya bu alandaki vergi muafiyet oranlarına dair herhangi bir kavram veya hukuki düzenleme bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_012",
+    "question": "Türk Ticaret Kanununa göre kurduğum şirket teknoloji alanında ise vergi muafiyetinden yararlanır mıyım?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu (TTK), şirketlerin kuruluşu ve ticari işleyişini düzenler ancak vergi muafiyetlerini kapsamaz. Teknoloji şirketlerine yönelik vergi muafiyetleri Teknoloji Geliştirme Bölgeleri Kanunu ve ilgili vergi kanunları (Kurumlar Vergisi vb.) kapsamında düzenlendiği için bu sorunun cevabı TTK metninde bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_013",
+    "question": "2026 yılı itibarıyla TTSG ilan ücretinin ücretsiz olduğu ilanlar nelerdir?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "01 Ocak 2026 tarihli tabloya göre; Kadın/Engelli Girişimi Kooperatifleri İlanları (Kuruluş ve Diğer) ile Terk, Resen ve Düzeltme İlanları ücretsizdir.",
+    "relevant_doc_ids": [
+      "harclar.csv"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_014",
+    "question": "Denetçiler nasıl seçilir ve görevleri nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu'na göre denetçi, kural olarak şirket genel kurulu tarafından; şirketler topluluğunda ise topluluk denetçisi ana şirketin genel kurulu tarafından seçilir (m. 399). Denetçinin temel görevi; şirketin veya topluluğun finansal tabloları ile yönetim kurulunun yıllık faaliyet raporunu denetlemek, bunların kanuna ve esas sözleşmeye uygunluğunu incelemek ve denetim faaliyetinin sonucunu bir rapor halinde düzenleyerek sunmaktır (m. 397, 398).",
+    "relevant_doc_ids": [
+      "ttk_madde_397",
+      "ttk_madde_398",
+      "ttk_madde_399"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_015",
+    "question": "Tasfiye memurları haiz oldukları yetkileri ne koşulda daraltılıp genişletilebilir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nun 282. maddesine göre; tasfiye memurlarının kanunen haiz oldukları yetkiler, ortaklar tarafından oybirliğiyle verilecek karar ile veya haklı sebepler dolayısıyla mahkeme kararıyla daraltılıp genişletilebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_282"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_016",
+    "question": "Gerçekleşmesi şüpheli yükümlülük ve askıdaki işlemlerden doğabilecek muhtemel kayıplar hangi kuruluş tarafından sunulan kurallara göre karşılık ayrılır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nun 75. maddesi uyarınca; gerçekleşmesi şüpheli olan yükümlülükler ile askıdaki işlemlerden doğabilecek muhtemel kayıplar için Kamu Gözetimi, Muhasebe ve Denetim Standartları Kurumu (KGK) tarafından belirlenen Türkiye Muhasebe Standartları'nda (TMS) öngörülen kurallar çerçevesinde karşılık ayrılır.",
+    "relevant_doc_ids": [
+      "ttk_madde_75"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_017",
+    "question": "Ticari işlerde; yargılamayı gerektiren davalarda hazırlık işlemlerine ve senetlerin ibrazı zorunluluğuna dair hususlarda hangi kanunun hükümleri uygulanır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Bu hususlarda Hukuk Usulü Muhakemeleri Kanunu'nun ilgili hükümleri uygulanır.",
+    "relevant_doc_ids": [
+      "ttk_madde_83"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_018",
+    "question": "İki kişinin herhangi bir hukuki sebep veya ilişkiden doğan alacaklarını teker teker ve ayrı ayrı istemekten karşılıklı olarak vazgeçip, bunları kalem kalem alacak ve borç şekline çevirerek hesabın kesilmesinden sonra çıkacak artan tutarı isteyebileceklerine ilişkin sözleşmeye ne ad verilir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 89 uyarınca bu sözleşmeye 'cari hesap sözleşmesi' adı verilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_89"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_019",
+    "question": "Cari hesap sözleşmeleri sözlü yapılabilir mi?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Hayır, yapılamaz. Türk Ticaret Kanunu Madde 89 fıkra 2 uyarınca, cari hesap sözleşmesi yazılı yapılmadıkça geçerli olmaz. Bu nedenle sözleşmenin mutlaka yazılı şekilde yapılması şarttır.",
+    "relevant_doc_ids": [
+      "ttk_madde_89"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_020",
+    "question": "Acentenin temel görevi veya yaptığı iş nedir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 102 uyarınca acentenin yaptığı iş; ticari bir işletmeyi ilgilendiren sözleşmelerde aracılık etmek veya bu sözleşmeleri ilgili tacir adına yapmaktır.",
+    "relevant_doc_ids": [
+      "ttk_madde_102"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_021",
+    "question": "Türk Ticaret Kanunu Madde 124'e göre ticaret şirketlerinin türleri nelerdir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 124 uyarınca ticaret şirketleri; kollektif, komandit, anonim, limited ve kooperatif şirketlerinden ibarettir.",
+    "relevant_doc_ids": [
+      "ttk_madde_124"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_022",
+    "question": "Sigortacı, sigorta teminatının kapsamında değişiklik yapmadan, ayarlama şartına dayanarak primi yükseltirse, sözleşme feshedilebilir mi?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 1414 uyarınca; sigortacı, sigorta teminatının kapsamında değişiklik yapmaksızın, sadece ayarlama şartına dayanarak primi yükseltirse, sigorta ettiren bildirimi aldığı tarihten itibaren bir ay içinde sözleşmeyi feshedebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_1414"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_023",
+    "question": "Gerçek kişi olan bir tacirin ticaret unvanı nasıl yazılır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 41 uyarınca gerçek kişi olan tacirin ticaret unvanı, 46. maddeye uygun olarak yapılabilecek ekler ile kısaltılmadan yazılacak adı ve soyadından oluşur.",
+    "relevant_doc_ids": [
+      "ttk_madde_41"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_024",
+    "question": "Bir ticaret unvanına \"Türk\", \"Türkiye\", \"Cumhuriyet\" ve \"Millî\" kelimeleri hangi şartlarda eklenebilir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 46 uyarınca \"Türk\", \"Türkiye\", \"Cumhuriyet\" ve \"Millî\" kelimeleri bir ticaret unvanına ancak Cumhurbaşkanı kararıyla konabilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_46"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_025",
+    "question": "Aksi iddia edilmiyorsa, ticari bir borcun faizi ne zaman işlenmeye başlar?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 10 uyarınca, aksi öngörülmemişse ticari bir borcun faizi, borcun muaccel olduğu tarihten itibaren işlenmeye başlar.",
+    "relevant_doc_ids": [
+      "ttk_madde_10"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_026",
+    "question": "Ticari şirketler tür değiştirebilir mi?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Evet, Türk Ticaret Kanunu'nun 180 ila 194. maddeleri uyarınca ticari şirketler başka bir şirket türüne dönüştürülebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_180",
+      "ttk_madde_194"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_027",
+    "question": "Sözleşmesi kanuni şekilde yapılmamış veya sözleşmeye konması zorunlu olan kayıtlardan biri veya bazıları eksik yahut geçersiz olan bir kollektif şirket, hukuki olarak ne sayılır?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 214 uyarınca; sözleşmesi kanuni şekilde yapılmamış veya zorunlu kayıtları eksik/geçersiz olan bir kollektif şirket adi şirket hükmündedir ve hakkında Borçlar Kanunu'nun adi ortaklığa ilişkin hükümleri uygulanır.",
+    "relevant_doc_ids": [
+      "ttk_madde_214",
+      "ttk_madde_216"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_028",
+    "question": "Bir gemi kaptanı, kendisine eksik veya yanlış bilgi verilerek ya da gizlice gemiye getirilen eşyaya karşı hangi haklara ve yetkilere sahiptir?",
+    "type": "basit_olgusal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 1147 uyarınca kaptan; bilgisi dışında gizlice veya yanlış/eksik bilgiyle yüklenen eşyayı her zaman karaya çıkarma, gemi veya diğer yükler için tehlike oluşturuyorsa denize atma, ya da eşyayı gemide alıkoyarak en yüksek navlun ücreti ile doğan zararların tazminini isteme haklarına sahiptir.",
+    "relevant_doc_ids": [
+      "ttk_madde_1147"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_029",
+    "question": "Anonim şirketlerin aktiflerinin borçlarını karşılayamadığı (borca batık olduğu) bilançodan anlaşıldığında yönetim kurulunun uyması gereken yükümlülük hangi maddede düzenlenmiştir ve bu madde kapsamındaki şirketin kurtarılması veya iflasının istenmesi süreci hangi adımları içerir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 376 uyarınca, şirket aktiflerinin borçlarını karşılamadığı (borca batık olma durumu) anlaşıldığında yönetim kurulu derhal bilançoyu çıkararak mahkemeye başvurur ve şirketin iflasını ister; ancak iflasın bildirilmesi yerine şirketin borca batıklık durumunu bertaraf etmek için gerekli önlemler de (örneğin genel kurulun toplantıya çağrılması veya uygun kurtarma tedbirleri) yine bu madde çerçevesinde değerlendirilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_376"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_030",
+    "question": "Türk Ticaret Kanununa göre borcum varsa ne yapmalıyım?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik bağlam ve kişisel hukuki danışmanlık niteliği içermektedir. Türk Ticaret Kanunu tüzel kişilerin veya tacirlerin genel borç tasfiyesini bireysel bazda düzenlemez; ayrıca borçlunun gerçek kişi tacir mi yoksa şirket mi olduğu belirtilmediği için ilgili maddeler net değildir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_031",
+    "question": "Türk Ticaret Kanununa göre yapay zeka üzerine kurulan şirketlerinin borçlanmaları nasıl halledilir?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nda 'yapay zeka üzerine kurulan şirketler' adı altında özel bir şirket türü veya bu şirketlerin borçlanmalarına dair spesifik bir düzenleme bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_032",
+    "question": "Türk Ticaret Kanununa göre bireysel şahıslar üzerinde mülk olduğunda borçlanma nasıl olur?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu (TTK), kural olarak ticari işletmeleri, tacirleri ve ticaret şirketlerini düzenler. Bireysel şahısların (ticari faaliyeti olmayan gerçek kişilerin) mülkiyet hakları ve mülkiyetleri üzerinden yaptıkları kişisel borçlanmalar TTK'nın değil, Türk Medeni Kanunu ile Türk Borçlar Kanunu'nun kapsamına girmektedir. Bu nedenle sorunun cevabı Türk Ticaret Kanunu metninde bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_033",
+    "question": "Türk Ticaret Kanununa göre yurtdışından şirketim satış yapmak üzere ürün satın alımlarında vergiden muaf mıyım?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu (TTK), ticaret şirketlerinin kuruluşu, işleyişi ve ticari sözleşmelerin esaslarını düzenler; ancak şirketlerin ithalat, ihracat veya yurtdışı ürün alımlarındaki vergi yükümlülüklerini ya da vergi muafiyetlerini kapsamaz. Vergi muafiyetleri ve gümrük vergilerine ilişkin düzenlemeler Vergi Usul Kanunu, Katma Değer Vergisi Kanunu ve Gümrük Kanunu gibi vergi mevzuatları içerisinde yer alır. Bu sebeple sorunun cevabı TTK metninde bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_034",
+    "question": "Kanuna göre anonim şirketlerin vergi şartları ve muafiyet durumaları nerelerdir?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu (TTK), anonim şirketlerin kuruluşunu, organlarını, yönetimi ve işleyişini düzenler ancak şirketlerin vergi şartlarına, oranlarına veya vergi muafiyetlerine ilişkin düzenlemeleri içermez. Anonim şirketlerin vergilendirilmesi ve muafiyet durumları Kurumlar Vergisi Kanunu ve Vergi Usul Kanunu gibi vergi mevzuatları kapsamında yer aldığından, bu sorunun cevabı Türk Ticaret Kanunu metninde bulunmamaktadır.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_035",
+    "question": "Türk Ticaret Kanununa göre acente görevi gören kimselerin aldıkları maaş kaçtır?",
+    "type": "cevaplanamaz_negatif",
+    "ground_truth_answer": "Türk Ticaret Kanunu'nda acenteler için belirlenmiş sabit bir 'maaş' tutarı bulunmamaktadır. Kanuna göre acente, bağımsız bir tacir sıfatıyla aracılık yapar ve hizmetleri karşılığında bir işçi gibi maaş değil, taraflar arasındaki sözleşmeye veya ticari teamüllere göre belirlenen bir komisyon/ücret alır. Dolayısıyla kanun metninde maktu bir maaş bilgisi yer almaz.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_036",
+    "question": "Türk Ticaret Kanununa göre şirketlerin kuruluş harcı kaç TL'dir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik bağlam içermektedir. Kurulacak şirketin türü (Anonim, Limited, Kollektif vb.) belirtilmediği için kuruluş harcı tutarı net olarak verilemez.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_037",
+    "question": "Tacirlerin türü şirketlerde yerine getirdiği sorumluluklar nelerdir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik ve belirsiz bir ifade içermektedir. 'Tacirlerin türü şirketlerde' tamlaması hukuki olarak net bir durumu veya statüyü ifade etmemektedir. Bahsedilen şirketin türü (Anonim, Limited, Kollektif vb.) ve tacirin hangi kapsamdaki sorumluluklarının (defter tutma yükümlülüğü, tescil ve ilan, basiretli iş adamı gibi davranma yükümlülüğü vb.) sorulduğu belli olmadığı için soruya kesin bir hukuki yanıt verilemez.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_038",
+    "question": "Gemi kaptanlarının belirlenemeyen çıkması gibi durumlarda edindikleri yetkiler nelerdir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik ve belirsiz bir ifade içermektedir. 'Belirlenemeyen çıkması' ifadesi hukuki ve pratik olarak net değildir. Kast edilen durumun deniz yolculuğunda karşılaşılan olağanüstü bir tehlike/beklenmeyen hal mi, yoksa gemiye gizlice yüklenen eşyaların veya kaçak yolcuların ortaya çıkması mı olduğu belli olmadığı için, kaptanın Türk Ticaret Kanunu kapsamında kullanacağı özel yetkiler net olarak tespit edilememektedir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_039",
+    "question": "Sigorta edilen kişi, sigortacı tarafından durumda bırakıldığında Türk Ticaret Kanunu kapsamında hangi madde uygulanır?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik ve belirsiz bir ifade içermektedir. 'Durumda bırakıldığında' ifadesiyle ne kastedildiği (örneğin; zararın ödenmemesi, haksız fesih, aydınlatma yükümlülüğünün ihlali veya temerrüt durumu vb.) açıkça belirtilmemiştir. Meydana gelen spesifik hukuki olay veya uyuşmazlık net olmadığından, Türk Ticaret Kanunu'nun sigorta hukukuna ilişkin hangi maddesinin uygulanacağı tespit edilememektedir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_040",
+    "question": "Türk Ticaret Kanunu ve 2026 Ticaret Sicili Harçları göz önüne alındığında anonim şirketlerin şube açılış harcı kaç TL'dir?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "2026 yılı ticaret sicili harçları tarifesine göre, sermaye şirketi statüsünde olan anonim şirketlerin şube açılış (tescil ve ilan) harcı 35.354,50 TL'dir.",
+    "relevant_doc_ids": [
+      "harclar.csv"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_041",
+    "question": "Yıla göre hizmet ücretleri listesinden bölünme ücreti kaç TL'dir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik ve belirsiz bir ifade içermektedir. Ücretin hangi yıla (örneğin 2026 yılına) ait tarifeden sorulduğu ve hangi şirket türü (anonim şirket, limited şirket, şahıs şirketi vb.) için bölünme işleminin yapılacağı belirtilmediği için net bir harç veya hizmet ücreti tutarı verilememektedir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_042",
+    "question": "2026 yılında yayınlanan Ticaret Sicili Harçları'na göre kooperatif şirketler için harc kaç TL'dir?",
+    "type": "belirsiz_eksik_ifade",
+    "ground_truth_answer": "Bu soru eksik bağlam içermektedir. Kooperatifler için hangi sicil işleminin (kuruluş, şube açılışı, unvan veya adres değişikliği, terkin vb.) harcının sorulduğu açıkça belirtilmediğinden net bir harç tutarı verilememektedir.",
+    "relevant_doc_ids": [],
+    "answerable": false
+  },
+  {
+    "id": "q_043",
+    "question": "Anonim şirketlerde genel kanuni yedek akçe, şirketin ödenmiş sermayesinin yüzde kaçına ulaşıncaya kadar ayrılmak zorundadır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 519 uyarınca, anonim şirketlerde genel kanuni yedek akçe, şirketin ödenmiş sermayesinin yüzde yirmisine (%20) ulaşıncaya kadar ayrılmak zorundadır.",
+    "relevant_doc_ids": [
+      "ttk_madde_519"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_044",
+    "question": "Yönetim kurulu, geçmiş hesap dönemine ait finansal tablolarını (bilanço ve gelir tablosu) bilanço gününden itibaren en geç kaç ay içinde hazırlamak zorundadır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 514 uyarınca, yönetim kurulu, geçmiş hesap dönemine ait finansal tablolarını ve eklerini bilanço gününden itibaren en geç üç (3) ay içinde hazırlamak zorundadır.",
+    "relevant_doc_ids": [
+      "ttk_madde_514"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_045",
+    "question": "Tacirlerin, ticari defterlerini, finansal tablolarını ve ilgili belgeleri sınıflandırılmış bir şekilde kaç yıl saklama zorunluluğu vardır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 82 uyarınca tacirler; ticari defterlerini, envanterleri, açılış bilançolarını, finansal tablolarını, faaliyet raporlarını ve ilgili belgeleri sınıflandırılmış bir şekilde on (10) yıl saklamakla yükümlüdür.",
+    "relevant_doc_ids": [
+      "ttk_madde_82"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_046",
+    "question": "2026 yılına göre Komandit ve kollektif şirketlerin telmsilci harcı kaç tl'dir?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "2026 yılı Ticaret Sicili Harçları Tarifesine göre, şahıs şirketleri statüsünde yer alan komandit ve kollektif şirketler için temsile yetkili kılınan kimselerin tescil ve ilanına (temsilci) ilişkin alınacak harç tutarı 3.881,60 TL'dir.",
+    "relevant_doc_ids": [
+      "harclar.csv"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_047",
+    "question": "Acente ile sözleşmeyi fesheden taraf, başlanmış işlerin tamamlanmaması sebebiyle diğer tarafın uğradığı zararı kaç aylık ihbar süresi sonucunda tazmin etmek zorudadır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 121 uyarınca, belirsiz süreli acentelik sözleşmelerinde haklı bir sebep olmadan veya üç (3) aylık ihbar süresine uymaksızın sözleşmeyi fesheden taraf, başlanmış işlerin tamamlanmaması yüzünden diğer tarafın uğradığı zararı tazmin etmek zorundadır.",
+    "relevant_doc_ids": [
+      "ttk_madde_121"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_048",
+    "question": "Kooperatiflerde tür değiştirme kararı sırasında ortakların kaçının desteklemesi gerekmektedir?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 189 uyarınca, kooperatiflerde tür değiştirme kararı kural olarak genel kurulda temsil edilen oyların en az üçte ikisinin (2/3) çoğunluğuyla alınır. Ancak, ortaklara kişisel sorumluluk veya ek ödeme yükümlülüğü getiren hallerde bütün ortakların en az üçte ikisinin (2/3) olumlu oyu aranır.",
+    "relevant_doc_ids": [
+      "ttk_madde_189"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_049",
+    "question": "Gümrük ve ticaret Bakanlığı düzenleme ve denetleme yetkisi dahilinde, Türk Ticaret Kanununa göre fesih davası kaç yıl içerisinde açılır?",
+    "type": "tablo_sayisal",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 210 uyarınca, Gümrük ve Ticaret Bakanlığı (güncel adıyla Ticaret Bakanlığı), kamu düzenine veya işletme konusuna aykırı işlemlerde ya da muvazaalı iş ve faaliyetlerde bulunduğu anlaşılan şirketler hakkında, bu durumları öğrenme tarihinden itibaren bir (1) yıl içinde fesih davası açabilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_210"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_050",
+    "question": "Anonim şirket genel kurulunda çağrı usulüne uyulmadığında kararların iptali için hangi şartlar aranır ve dava hangi süre içinde açılır?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 445 ve 446'ya göre, usulsüz çağrı ile toplanan genel kurulda alınan kararların iptali, toplantıda hazır bulunsalar dahi muhalif kalarak tutanağa geçirten, çağrı usulüne ve gündeme aykırılığı haklı bir sebebe dayandıran pay sahipleri tarafından, kararın tescil ve ilanından itibaren üç ay içinde açılacak dava ile talep edilebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_445",
+      "ttk_madde_446"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_051",
+    "question": "Bir ticari işletmeyi kısmen işleten ile açtığını ilan eden kişinin yükümlülükleri arasındaki farklar nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 11 ve 12 uyarınca, bir ticari işletmeyi kısmen dahi olsa kendi adına işleten kişi tacir sayılır ve ilgili tüm yasal yükümlülüklere (defter tutma, ticaret siciline tescil vb.) tabidir; işletmeyi açtığını ilan eden ancak henüz fiilen faaliyete geçmeyen kişi ise ilanına güvenen iyiniyetli üçüncü kişilere karşı tacir gibi sorumlu tutulur ancak tam anlamıyla ticari işletme işletme kriterlerine göre değerlendirme farklılıkları doğurabilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_11",
+      "ttk_madde_12"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_052",
+    "question": "Münhasırlık hakkına aykırı olarak aynı bölgeye başka acente atanırsa acentenin hakları nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 102 ve 122 gereğince, münhasırlık (tek elcilik) yetkisine aykırı davranılarak aynı bölgeye müvekkil tarafından başka bir acente atanması veya doğrudan satış yapılması durumunda acente, uğradığı zararların tazminini talep edebileceği gibi sözleşmeyi haklı nedenle feshedebilir ve sözleşme sona erdiğinde denkleştirme (portföy) tazminatı talep etme hakkını da korur.",
+    "relevant_doc_ids": [
+      "ttk_madde_102",
+      "ttk_madde_122"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_053",
+    "question": "Kollektif ve komandit şirket ortaklarının sorumlulukları ile takip yolları bakımından farklar nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 211 ve 304 uyarınca, kollektif şirket ortakları şirketin borçlarından dolayı tüm malvarlıklarıyla birinci derecede müteselsilen sorumludur; komandit şirketlerde ise komandite ortaklar kollektif ortaklar gibi sınırsız sorumluyken, komanditer ortaklar sadece taahhüt ettikleri sermaye payı ile sınırlı sorumludur ve alacaklılar öncelikle şirket varlıklarına başvurmak zorundadır.",
+    "relevant_doc_ids": [
+      "ttk_madde_211",
+      "ttk_madde_304"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_054",
+    "question": "Anonim şirketlerde yönetim kurulu sorumluluğu ile denetçilerin raporlama yükümlülüğü nasıl bir zincir kurar?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 397 ve 553 hükümlerine göre, yönetim kurulu finansal tabloları hazırlamakla ve denetime sunmakla yükümlüdür; bağımsız denetçi ise bu tabloları kanuna ve esas sözleşmeye göre denetleyerek raporlar. Denetçinin raporu doğrultusunda finansal tabloların genel kurulca onaylanması veya onaylanmamasındaki usulsüzlüklerde, yönetim kurulu hazırlama ve sunma fiilinden, denetçi ise denetim ve raporlama kusurundan doğan zararlardan müştereken sorumlu olabilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_397",
+      "ttk_madde_553"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_055",
+    "question": "Acentelik sözleşmesinde fesih bildirim süresine uyulmaması durumunda, denkleştirme tazminatı talebi ile başlanmış işlerin tamamlanmamasından doğan tazminat yükümlülüğü Türk Ticaret Kanunu'na göre nasıl düzenlenmiştir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 121 uyarınca, belirsiz süreli sözleşmelerde haklı bir sebep olmaksızın veya üç aylık ihbar süresine uyulmaksızın sözleşmeyi fesheden taraf, başlanmış işlerin tamamlanmaması yüzünden diğer tarafın uğradığı zararı tazmin etmek zorundadır; Madde 122 uyarınca ise acente, sözleşmenin feshinden doğan bu durumdan bağımsız olarak, müvekkile kazandırdığı yeni müşteriler sebebiyle hakkaniyete uygun bir denkleştirme tazminatı talep etme hakkına sahip olur.",
+    "relevant_doc_ids": [
+      "ttk_madde_121",
+      "ttk_madde_122"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_056",
+    "question": "Limited şirketlerde sözleşmede yer alan sebeplerle çıkarma ile mahkemeden haklı sebeple çıkma arasındaki farklar nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 621 ve 622 hükümlerine göre, şirket sözleşmesinde öngörülen haklı sebeplerle ortaklıktan çıkarma genel kurul kararıyla gerçekleştirilir ve ilgili ortak bu karara karşı iptal davası açabilir; buna karşılık, sözleşmede hüküm bulunmasa bile her ortak haklı sebeplerin varlığı halinde şirketin feshini veya mahkeme yoluyla kendisinin şirketten çıkarılmasını mahkemeden talep edebilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_621",
+      "ttk_madde_622"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_057",
+    "question": "Emre yazılı ve hamiline yazılı senetlerin devri arasındaki temel hukuki şartlar nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 655 ve 681 uyarınca, emre yazılı senetlerin devri için senedin arkasına ciro yapılması ve zilyetliğin devri zorunluyken; hamiline yazılı senetler sadece senedin zilyetliğinin (fiziki olarak el değiştirmesinin) devredilmesiyle geçerli bir şekilde devredilmiş olur.",
+    "relevant_doc_ids": [
+      "ttk_madde_655",
+      "ttk_madde_681"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_058",
+    "question": "Sigorta ettirenin beyan yükümlülüğünü ihlal etmesi durumunda sigortacının hakları nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 54 ve 55 gereğince, sigorta ettiren sözleşme yapılırken bildiği veya bilmesi gereken tüm önemli hususları bildirmek zorundadır; bu yükümlülüğün kusurlu veya kasıtlı ihlali halinde sigortacı, durumun öğrenildiği tarihten itibaren belli süreler içinde sözleşmeden cayabilir veya prim farkı isteyebilir, kasıt durumunda ise riziko gerçekleşmiş olsa bile tazminat ödeme yükümlülüğü ortadan kalkar.",
+    "relevant_doc_ids": [
+      "ttk_madde_54",
+      "ttk_madde_55"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_059",
+    "question": "Anonim şirketlerde kayıtlı sermaye sistemine geçiş ve yönetim kuruluna yetki verilmesinin sonuçları nelerdir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 332 ve 346 hükümlerine göre, esas sermaye sisteminden kayıtlı sermaye sistemine geçmek için esas sözleşmenin değiştirilmesi ve Bakanlık izni gerekir; bu sistemde genel kurul, yönetim kuruluna tavan sınırları içinde kalmak şartıyla yeni pay çıkarma ve sermaye artırımı yapma yetkisini devredebilir, bu durum azlık pay sahiplerinin haklarının korunması açısından belirli yasal denetim sınırlarına tabidir.",
+    "relevant_doc_ids": [
+      "ttk_madde_332",
+      "ttk_madde_346"
+    ],
+    "answerable": true
+  },
+  {
+    "id": "q_060",
+    "question": "Gemi ipoteği ile gemi alacaklısı hakkı arasındaki rüçhan sırası nasıl belirlenir?",
+    "type": "multi_hop",
+    "ground_truth_answer": "Türk Ticaret Kanunu Madde 1320 ve 1322 uyarınca, deniz alacaklarından kaynaklanan gemi alacaklısı hakları, normal gemi ipoteklerinden ve diğer alacaklardan öncelikli bir rüçhan (öncelik) hakkına sahiptir; dolayısıyla geminin cebri icra yoluyla satışı sonucunda elde edilen bedelin paylaşımında öncelik sırası kanuni düzenlemelere göre gemi alacaklısı haklarına verilir.",
+    "relevant_doc_ids": [
+      "ttk_madde_1320",
+      "ttk_madde_1322"
+    ],
+    "answerable": true
+  }
+]
